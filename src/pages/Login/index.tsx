@@ -69,9 +69,9 @@ export default function LoginPage() {
             </a>
           </div>
           <div className="mt-4 text-center">
-            <a className="inline-block align-baseline font-bold text-sm text-accent-200 hover:text-accent-100" href="#">
-              New User? Create Account
-            </a>
+          <p className="text-neutral-200">
+              New user? <a href="/signup" className="text-accent-200 font-bold">Sign up</a>
+            </p>
           </div>
         </form>
       </div>
