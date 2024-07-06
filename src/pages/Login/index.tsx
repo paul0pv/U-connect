@@ -1,5 +1,5 @@
 import { FormEvent } from "react";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FaUser, FaLock, FaGoogle, FaMicrosoft, FaLinkedin } from 'react-icons/fa';
 import logo from '/u-logo-transparent.png';
 
@@ -89,7 +89,7 @@ export default function LoginPage() {
         </div>
         <div className="mt-4 text-center">
           <p className="text-neutral-200">
-            New user? <a href="/signup" className="text-accent-200 font-bold">Sign up</a>
+            New user? <Link to="/signup" className="text-accent-200 font-bold">Sign up</Link>
           </p>
         </div>
       </div>

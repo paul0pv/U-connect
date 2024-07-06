@@ -1,5 +1,6 @@
 //import { useState, ChangeEvent, FormEvent } from "react";
 import { FaUser, FaEnvelope, FaLock, FaGoogle, FaMicrosoft, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import logo from '/u-logo-transparent.png';
 
 export default function SignupPage() {
@@ -113,7 +114,7 @@ export default function SignupPage() {
           </div>
           <div className="mt-4 text-center">
             <p className="text-neutral-200">
-              Already have an account? <a href="/" className="text-accent-200 font-bold">Log In</a>
+              Already have an account?  <Link to="/" className="text-accent-200 font-bold">Log in</Link>
             </p>
           </div>
         </div>
