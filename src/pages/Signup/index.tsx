@@ -1,5 +1,5 @@
 //import { useState, ChangeEvent, FormEvent } from "react";
-import { FaUser, FaEnvelope, FaLock } from 'react-icons/fa';
+import { FaUser, FaEnvelope, FaLock, FaGoogle, FaMicrosoft, FaLinkedin } from 'react-icons/fa';
 import logo from '/u-logo-transparent.png';
 
 export default function SignupPage() {
@@ -30,6 +30,7 @@ export default function SignupPage() {
           <div className="flex justify-center mb-8">
             <img src={logo} alt="U-Connect Logo" className="w-1/2" />
           </div>
+          {/**<h2 className="text-2xl font-bold text-center mb-8">Sign Up</h2> */}
           <form className="space-y-4">
             <div className="flex space-x-4">
               <div className="flex-1">
@@ -91,6 +92,25 @@ export default function SignupPage() {
               <button type="submit" className="w-full py-2 bg-accent-200 text-white font-bold rounded-md hover:bg-accent-100 focus:outline-none focus:ring-2 focus:ring-accent-100">Sign Up</button>
             </div>
           </form>
+          <div className="mt-4">
+            <div className="flex items-center justify-center space-x-2 mb-4">
+              <span className="text-neutral-200">or sign up with</span>
+            </div>
+            <div className="flex justify-center space-x-2">
+              <button className="flex items-center space-x-2 py-2 px-4 bg-red-600 text-white rounded-md focus:outline-none hover:bg-red-700">
+                <FaGoogle />
+                <span>Google</span>
+              </button>
+              <button className="flex items-center space-x-2 py-2 px-4 bg-blue-600 text-white rounded-md focus:outline-none hover:bg-blue-700">
+                <FaMicrosoft />
+                <span>Microsoft</span>
+              </button>
+              <button className="flex items-center space-x-2 py-2 px-4 bg-blue-500 text-white rounded-md focus:outline-none hover:bg-blue-600">
+                <FaLinkedin />
+                <span>LinkedIn</span>
+              </button>
+            </div>
+          </div>
           <div className="mt-4 text-center">
             <p className="text-neutral-200">
               Already have an account? <a href="/" className="text-accent-200 font-bold">Log In</a>

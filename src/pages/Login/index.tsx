@@ -1,6 +1,6 @@
 import { FormEvent } from "react";
 import { useNavigate } from 'react-router-dom';
-import { FaUser, FaLock } from 'react-icons/fa';
+import { FaUser, FaLock, FaGoogle, FaMicrosoft, FaLinkedin } from 'react-icons/fa';
 import logo from '/u-logo-transparent.png';
 
 export default function LoginPage() {
@@ -24,7 +24,7 @@ export default function LoginPage() {
         <img src={logo} alt="U-Connect Logo" className="w-58 h-48 lg:w-full lg:h-full" />
       </div>
       <div className="lg:w-1/3 w-full max-w-sm bg-neutral-100 p-8 rounded shadow-md">
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="mb-4 relative">
             <label className="block text-secondary-100 text-sm font-bold mb-2" htmlFor="username">
               Username
@@ -58,7 +58,6 @@ export default function LoginPage() {
             <button
               className="bg-accent-200 hover:bg-accent-100 text-neutral-100 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
               type="submit"
-              onClick={handleSubmit}
             >
               Sign In
             </button>
@@ -68,12 +67,31 @@ export default function LoginPage() {
               Forgot Password?
             </a>
           </div>
-          <div className="mt-4 text-center">
-          <p className="text-neutral-200">
-              New user? <a href="/signup" className="text-accent-200 font-bold">Sign up</a>
-            </p>
-          </div>
         </form>
+        <div className="mt-4">
+          <div className="flex items-center justify-center space-x-2 mb-4">
+            <span className="text-neutral-200">or sign in with</span>
+          </div>
+          <div className="flex justify-center space-x-2">
+            <button className="flex items-center space-x-2 py-2 px-4 bg-red-600 text-white rounded-md focus:outline-none hover:bg-red-700">
+              <FaGoogle />
+              <span>Google</span>
+            </button>
+            <button className="flex items-center space-x-2 py-2 px-4 bg-blue-600 text-white rounded-md focus:outline-none hover:bg-blue-700">
+              <FaMicrosoft />
+              <span>Microsoft</span>
+            </button>
+            <button className="flex items-center space-x-2 py-2 px-4 bg-blue-500 text-white rounded-md focus:outline-none hover:bg-blue-600">
+              <FaLinkedin />
+              <span>LinkedIn</span>
+            </button>
+          </div>
+        </div>
+        <div className="mt-4 text-center">
+          <p className="text-neutral-200">
+            New user? <a href="/signup" className="text-accent-200 font-bold">Sign up</a>
+          </p>
+        </div>
       </div>
     </div>
     );
