@@ -1,16 +1,16 @@
-import { useState, ChangeEvent, FormEvent } from "react";
+//import { useState, ChangeEvent, FormEvent } from "react";
 
 export default function SignupPage() {
 
-    const [formValues, setFormValues] = useState({
-        name: '',
-        lastname: '',
-        email: '',
-        phone: '',
-        university: '',
-        password: '',
-        confirmPassword: '',
-    });
+    //const [formValues, setFormValues] = useState({
+    //    name: '',
+    //    lastname: '',
+    //    email: '',
+    //    phone: '',
+    //    university: '',
+    //    password: '',
+    //    confirmPassword: '',
+    //});
 
     //const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     //    const {name, value } = e.target;
