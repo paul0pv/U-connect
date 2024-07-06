@@ -1,19 +1,19 @@
-import { useState, ChangeEvent, FormEvent } from "react";
-import { Link, useNavigate } from 'react-router-dom';
+import { FormEvent } from "react";
+import { useNavigate } from 'react-router-dom';
 import { FaUser, FaLock } from 'react-icons/fa';
 import logo from '/u-logo-transparent.png';
 
 export default function LoginPage() {
 
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+    //const [username, setUsername] = useState('');
+    //const [password, setPassword] = useState('');
     const navigate = useNavigate();
   
     const handleSubmit = (e: FormEvent) => {
       e.preventDefault();
       // Handle form submission logic here
-      console.log('Username:', username);
-      console.log('Password:', password);
+      //console.log('Username:', username);
+      //console.log('Password:', password);
       // Redirect to the dashboard page
       navigate('/dashboard');
     };

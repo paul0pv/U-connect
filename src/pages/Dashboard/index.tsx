@@ -19,13 +19,13 @@ export default function DashboardPage() {
     };
 
 
-    const samplePost = {
+    /*const samplePost = {
         tag: 'Technology',
         profileImage: 'https://via.placeholder.com/150',
         username: 'John Doe',
         timestamp: '2 hours ago',
         content: 'This is a sample post content. It can be a text or any other element.',
-    };
+    }; */
 
 
     return (

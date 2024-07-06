@@ -12,15 +12,15 @@ export default function SignupPage() {
         confirmPassword: '',
     });
 
-    const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-        const {name, value } = e.target;
-        setFormValues({ ...formValues, [name]: value});
-    }
+    //const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    //    const {name, value } = e.target;
+    //    setFormValues({ ...formValues, [name]: value});
+    //}
 
-    const handleSubmit = (e: FormEvent) => {
-        e.preventDefault();
-        console.log('Form Values:', formValues);
-      };
+    //const handleSubmit = (e: FormEvent) => {
+    //    e.preventDefault();
+    //    console.log('Form Values:', formValues);
+    //  };
 
       return (
         <section className="container mx-auto">
