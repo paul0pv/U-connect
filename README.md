@@ -12,6 +12,6 @@ Hacer que la educación sea accesible, interactiva y atractiva, empoderando a es
 - **Conexión:** Únete a una red global de individuos apasionados por el aprendizaje, estableciendo conexiones significativas y colaborativas.
 
 ## Únete a Nosotros
-Descarga U-Connect hoy mismo y forma parte de una comunidad que está transformando el aprendizaje. ¡Transfiere tu manera de aprender y enseñar con U-SHH!
+Descarga U-Connect hoy mismo y forma parte de una comunidad que está transformando el aprendizaje. ¡Transfiere tu manera de aprender y enseñar con U-Connect!
 
 [Conoce U-Connect](https://u-connect-eta.vercel.app/)
